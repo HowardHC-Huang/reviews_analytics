@@ -41,3 +41,12 @@ for d in data:	#清單data的資料一筆筆拿出,叫做d
 	if len(d) < 100:
 		new.append(d)	#如果長度<100,就把你裝進新清單new裡(到此篩選完畢)
 print('共有', len(new), '筆留言,字數小於100字')
+
+#9.[延伸4]篩選留言中有good字樣者
+good = []
+for d in data:
+	if 'good' in d:		#[易忘]如果good在d裡
+		good.append(d)
+print('共有', len(good), '筆留言,提到good')
+
+print(good[0])	#自己測試看看印出第一筆
